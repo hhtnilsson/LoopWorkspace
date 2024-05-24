@@ -51,7 +51,7 @@ jobs:
           # more customizations can be pasted after this line
           
           # Loopkit: hhtnilsson/hhtnilsson-patch-1: Ljumjev bedre verdier
-          curl https://github.com/hhtnilsson/Loopkit/commit/ ad40cfbd575520451457b707e1d98c2aedd21a39.patch | git apply -v --directory=Loopkit
+          curl https://github.com/hhtnilsson/Loopkit/commit/ad40cfbd575520451457b707e1d98c2aedd21a39.patch | git apply -v --directory=Loopkit
 
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
