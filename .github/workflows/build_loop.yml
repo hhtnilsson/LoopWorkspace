@@ -291,6 +291,12 @@ jobs:
 
           # the final customization listed above CANNOT have a continuation character
           # more customizations can be pasted after this line
+          
+          # Loop: hhtnilsson/hhtnilsson-patch-1: Endre standard karbo tider
+            Curl https://github.com/hhtnilsson/Loop/commit/af3b0443eb712da896cef0276c16420d8c546699.patch | git apply -v --directory=Loop
+         
+          # Loopkit: hhtnilsson/hhtnilsson-patch-1: Ljumjev bedre verdier
+            Curl https://github.com/hhtnilsson/Loopkit/commit/ad40cfbd575520451457b707e1d98c2aedd21a39.patch | git apply -v --directory=Loopkit
       
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
